@@ -3,6 +3,22 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.primary_font {
+    font-family: "Hind Siliguri", sans-serif;
+}
+.primary_btn{
+    background: #ffcd33;
+}
+.grayscale-img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.grayscale-img:hover {
+    filter: grayscale(0%);
+}
+
 .selected {
     background-color: #75459B !important;
     color: white;
