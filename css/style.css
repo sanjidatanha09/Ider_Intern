@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.selected {
+    background-color: #75459B !important;
+    color: white;
+}
+.icon_color{
+    background-color: #75459B;
+}
+.text_color_primary{
+    color: #0317A4;
+}
+.text_color_title{
+    color: #141D38;
+}
+.text_color_paragraph{
+    color: #737887;
+}
+.gray_color_background{
+    background-color: #EFF1F9;
+}
+
+.button_primary {
+    background-color: #6f00ff;
+    color: white;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 14px;
+    border: none;
+    transition: .3s all ease-in-out;
+  }
+  
+  .button_primary:hover {
+    background-color: #29439A;
+  }

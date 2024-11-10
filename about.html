@@ -1,0 +1,51 @@
+<div class="flex flex-col md:flex-row gap-6">
+    <!-- Contact Information Section -->
+    <div class="flex items-center justify-center rounded bg-white border-2 border-gray-300 shadow-md px-4 py-4 mx-auto w-full md:w-1/2">
+        <div class="text-lg mx-auto text-center">
+            <h1 class="font-bold text-3xl">Contact Information</h1>
+            <p>
+                <span class="font-bold">Email:</span> infogcauk@gmail.com
+            </p>
+            <p>
+                <span class="font-bold">Phone:</span> +447799946311, +447550448928, +447932612667
+            </p>
+            <p>
+                <span class="font-bold">Address:</span> Chattogram Centre, 113 New Road, Whitechapel, London E1 1HJ
+            </p>
+        </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="rounded bg-white text-lg mx-auto flex-1 border-2 border-gray-300 shadow-md px-4 py-4 w-full md:w-1/2">
+        <h1 class="font-bold text-xl">Contact Form</h1>
+        <form id="contactForm">
+            <div class="form-control w-full">
+                <label class="label">
+                    <span class="label-text font-bold">Full Name <span class="text-red-500">*</span></span>
+                </label>
+                <input type="text" name="name" placeholder="Full Name" class="border border-gray-500 rounded-md p-3 h-10 w-full" required />
+            </div>
+            <div class="form-control w-full">
+                <label class="label">
+                    <span class="label-text font-bold">Email <span class="text-red-500">*</span></span>
+                </label>
+                <input type="email" name="email" placeholder="Email" class="border border-gray-500 rounded-md p-3 h-10 w-full" required />
+            </div>
+            <div class="form-control w-full">
+                <label class="label">
+                    <span class="label-text font-bold">Phone <span class="text-red-500">*</span></span>
+                </label>
+                <input type="tel" name="phone" placeholder="Phone" class="border border-gray-500 rounded-md p-3 h-10 w-full" required />
+            </div>
+            <div class="form-control w-full">
+                <label class="label">
+                    <span class="label-text font-bold">Message <span class="text-red-500">*</span></span>
+                </label>
+                <textarea rows="4" name="message" placeholder="Message" class="border border-gray-500 rounded-md p-3 w-full" required></textarea>
+            </div>
+            <div class="form-control mt-4">
+                <button type="submit" class="bg-blue-600 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

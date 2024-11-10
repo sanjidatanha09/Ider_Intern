@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greater Chattogram Association UK</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+    <!-- Sidebar Component -->
+    <div class="flex gap-4 w-full">
+        <!-- Sidebar -->
+        <div id="sidebar"
+            class="w-64 shadow-md z-50 bg-white text-white h-screen fixed p-4 transition-transform transform -translate-x-full md:translate-x-0">
+            <div class="bg-white rounded w-full">
+                <img class="rounded h-20 object-contain w-full" src="./assets/logo.png" alt="Logo" />
+            </div>
+            <!-- Menu Items -->
+            <div class="flex flex-col justify-between mt-2">
+                <ul id="sidebarMenu" class="w-full">
+                    <!-- Overview Section -->
+                    <li class="font-bold text-sm text_color_primary my-2">Overview</li>
+                    <li class="mb-2">
+                        <a href="/"
+                            class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700"
+                            id="homeLink">
+                            <i class="fas fa-home icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">Home</span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="/home"
+                            class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700"
+                            id="aboutLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
+                            <span class="font-bold">About</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="md:ml-64 w-full">
+            <div class="bg-white w-full lg:p-8 fixed shadow-md flex flex-row z-40">
+                <div class="lg:hidden p-6 flex justify-between gap-5 w-full">
+                    <h1 class="">This is navbar</h1>
+                    <button id="menuButton" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                <div></div>
+            </div>
+
+            <!-- Banner and Gallery Section -->
+            <div class="mt-20 mx-4">
+                <div class="  overflow-hidden">
+                    <div class="">
+                        <!-- Header Section -->
+                        <div class="bg-blue-500 text-white text-center py-6 px-[15px]">
+                            <h1 class="text-5xl font-bold">Video</h1>
+                            <p class="text-base mt-2">Memorable moments of our association</p>
+                        </div>
+
+                        <!-- Gallery Grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 my-4">
+                            <!-- Gallery Item Start -->
+                            <a href="https://www.youtube.com/watch?v=kedLgaw9VpM" target="_blank" class="border-2 border-gray-300 shadow-md bg-white p-2 block max-w-sm mx-auto">
+                                <div class="h-52">
+                                    <!-- Conditionally render image or icon -->
+                                    <img id="image" src="https://member.gcauk.co.uk/uploads/video/1718310489-666b5659ad95d.jpg" class="h-full w-full object-cover" alt="Video Thumbnail" onerror="showPlaceholder()" />
+                                   
+                                </div>
+                                <div class="my-3">
+                                    <p class="text-xl font-medium">Video Title Here</p>
+                                </div>
+                            </a>
+                            <!-- Gallery Item End -->
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/home.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+        function showPlaceholder() {
+            const image = document.getElementById("image");
+            const placeholderIcon = document.getElementById("placeholderIcon");
+            image.classList.add("hidden");
+            placeholderIcon.classList.remove("hidden");
+        }
+
+    </script>
+</body>
+
+</html>
