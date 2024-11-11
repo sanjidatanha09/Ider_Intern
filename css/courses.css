@@ -10,6 +10,9 @@
 .primary_btn{
     background: #ffcd33;
 }
+.primary_btn:hover{
+    background:  #fec210;
+}
 .grayscale-img {
     filter: grayscale(100%);
     transition: filter 0.3s ease;
@@ -53,3 +56,21 @@
   .button_primary:hover {
     background-color: #29439A;
   }
+  .call_btn{
+    background-color: #00C853;
+  }
+  .call_btn:hover{
+    background-color: #00B84D;
+  }
+  @keyframes grow-shrink {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}
+
+.animate-grow-shrink {
+    animation: grow-shrink 1s ease-in-out infinite;
+}
