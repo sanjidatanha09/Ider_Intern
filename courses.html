@@ -24,7 +24,7 @@
     <div class="flex w-full gap-4 ">
         <!-- Sidebar -->
         <div id="sidebar"
-            class="fixed z-50 w-64 h-screen p-4 text-white transition-transform transform -translate-x-full md:translate-x-0">
+            class="fixed z-50 w-64 h-screen p-4 text-white bg-white transition-transform transform -translate-x-full md:translate-x-0">
             <div class="w-full bg-white rounded">
                 <img class="object-contain w-full h-20 rounded" src="./assets/logo.png" alt="Logo" />
             </div>
@@ -32,20 +32,20 @@
             <div class="flex flex-col justify-between mt-2">
                 <ul id="sidebarMenu" class="w-full">
                     <!-- Overview Section -->
-                    <li class="my-2 text-sm font-bold text_color_primary">Overview</li>
+                    <li class="font-bold text-sm text_color_primary my-2">Overview</li>
                     <li class="mb-2">
-                        <a href="/"
-                            class="flex items-center gap-2 p-2 text-gray-700 rounded sidebar-link hover:bg-gray-100"
+                        <a href="index.html"
+                            class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700"
                             id="homeLink">
-                            <i class="p-2 text-xs text-white rounded fas fa-home icon_color"></i>
+                            <i class="fas fa-home icon_color text-white p-2 text-xs rounded"></i>
                             <span class="font-bold">Home</span>
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="/"
-                            class="flex items-center gap-2 p-2 text-gray-700 rounded sidebar-link hover:bg-gray-100"
-                            id="homeLink">
-                            <i class="p-2 text-xs text-white rounded fas fa-home icon_color"></i>
+                        <a href="about.html"
+                            class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700"
+                            id="aboutLink">
+                            <i class="fas fa-home icon_color text-white p-2 text-xs rounded"></i>
                             <span class="font-bold">About Us</span>
                         </a>
                     </li>
@@ -53,91 +53,91 @@
 
 
                     <li class="mb-2">
-                        <a href="./courses.html"
-                            class="flex items-center gap-2 p-2 text-gray-700 rounded sidebar-link hover:bg-gray-100"
-                            id="aboutLink">
-                            <i class="p-2 text-xs text-white rounded fas fa-info-circle icon_color"></i>
+                        <a href="courses.html"
+                            class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700"
+                            id="courseLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
                             <span class="font-bold">Our Courses</span>
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="./about.html"
-                            class="flex items-center gap-2 p-2 text-gray-700 rounded sidebar-link hover:bg-gray-100"
-                            id="aboutLink">
-                            <i class="p-2 text-xs text-white rounded fas fa-info-circle icon_color"></i>
+                        <a href="service.html"
+                            class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700"
+                            id="serviceLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
                             <span class="font-bold">Our Services</span>
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="./"
-                            class="flex items-center gap-2 p-2 text-gray-700 rounded sidebar-link hover:bg-gray-100"
-                            id="aboutLink">
-                            <i class="p-2 text-xs text-white rounded fas fa-info-circle icon_color"></i>
+                        <a href="software.html"
+                            class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700"
+                            id="softwareLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
                             <span class="font-bold">Our Softwares</span>
                         </a>
                     </li>
 
                     <li class="mb-2">
-                        <a href="./photo.html"
-                            class="flex items-center gap-2 p-2 text-gray-700 rounded sidebar-link hover:bg-gray-100"
-                            id="aboutLink">
-                            <i class="p-2 text-xs text-white rounded fas fa-info-circle icon_color"></i>
+                        <a href="photo.html"
+                            class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700"
+                            id="photoLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
                             <span class="font-bold">Photo Gallery</span>
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="./video.html"
-                            class="flex items-center gap-2 p-2 text-gray-700 rounded sidebar-link hover:bg-gray-100"
-                            id="aboutLink">
-                            <i class="p-2 text-xs text-white rounded fas fa-info-circle icon_color"></i>
+                        <a href="video.html"
+                            class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700"
+                            id="videoLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
                             <span class="font-bold">Video Gallery</span>
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="./"
-                            class="flex items-center gap-2 p-2 text-gray-700 rounded sidebar-link hover:bg-gray-100"
-                            id="aboutLink">
-                            <i class="p-2 text-xs text-white rounded fas fa-info-circle icon_color"></i>
+                        <a href="blog.html"
+                            class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700"
+                            id="blogLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
                             <span class="font-bold">Blog & Event</span>
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="./contact.html"
-                            class="flex items-center gap-2 p-2 text-gray-700 rounded sidebar-link hover:bg-gray-100"
-                            id="aboutLink">
-                            <i class="p-2 text-xs text-white rounded fas fa-info-circle icon_color"></i>
+                        <a href="contact.html"
+                            class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700"
+                            id="contactLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
                             <span class="font-bold">Contact Us</span>
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="./"
-                            class="flex items-center gap-2 p-2 text-gray-700 rounded sidebar-link hover:bg-gray-100"
-                            id="aboutLink">
-                            <i class="p-2 text-xs text-white rounded fas fa-info-circle icon_color"></i>
+                        <a href="student_regi.html"
+                            class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700"
+                            id="student_regiLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
                             <span class="font-bold">Student Registration</span>
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="./"
-                            class="flex items-center gap-2 p-2 text-gray-700 rounded sidebar-link hover:bg-gray-100"
-                            id="aboutLink">
-                            <i class="p-2 text-xs text-white rounded fas fa-info-circle icon_color"></i>
+                        <a href="student_veri.html"
+                            class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700"
+                            id="student_veriLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
                             <span class="font-bold">Student Verification</span>
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="./"
-                            class="flex items-center gap-2 p-2 text-gray-700 rounded sidebar-link hover:bg-gray-100"
-                            id="aboutLink">
-                            <i class="p-2 text-xs text-white rounded fas fa-info-circle icon_color"></i>
+                        <a href="course_details.html"
+                            class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700"
+                            id="courseDetailsLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
                             <span class="font-bold">Course Details</span>
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="./"
-                            class="flex items-center gap-2 p-2 text-gray-700 rounded sidebar-link hover:bg-gray-100"
-                            id="aboutLink">
-                            <i class="p-2 text-xs text-white rounded fas fa-info-circle icon_color"></i>
+                        <a href="blog_details.html"
+                            class="sidebar-link flex items-center gap-2 p-2 rounded hover:bg-gray-100 text-gray-700"
+                            id="blog_detailsLink">
+                            <i class="fas fa-info-circle icon_color text-white p-2 text-xs rounded"></i>
                             <span class="font-bold">Blog Details</span>
                         </a>
                     </li>
